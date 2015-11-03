@@ -1,0 +1,13 @@
+---
+
+settings:
+  source_path: "provision"
+  playbook: "lamp.yml"
+  config_path: "config/advanced.json"
+  tags:
+    - deploy
+
+nodes:
+  trusty:
+    ip_addr: 10.0.0.10
+    image: ubuntu/trusty64
